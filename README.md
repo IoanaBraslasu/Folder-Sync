@@ -11,12 +11,12 @@ This Python program maintains a full, identical copy of source folder at a repli
 * time
 * logging
 
-<br/><br/>
+
 
 ## How does this program work?
-Every user's operation of copying removal or updating in the source folder are logged to a file and to the console output. __Syncronization is performed periodically__
+Every user's operation of copying removal or updating in the source folder are logged to a file and to the console output. __Syncronization is performed periodically!__
 
-<br></br>
+
 
 There are 2 main functions:
 1. __sync_folders__ function will perform the syncronization between given source and replica folders. Here the exact directory tree for both folders is created. Every change in the source folder is recorded in the log file
@@ -25,11 +25,11 @@ There are 2 main functions:
 
 ## How to run this code?
 Open your terminal and run the following bash command:
-It contains the path to the source file and to the replica file, __syncronization__ __interval__ and the path to the log file
 
 ```bash
  python folder_sync.py /path/to/source /path/to/replica 60 /path/to/logfile.log
 
 ```
+The command should contain the path to the source file and to the replica file, __syncronization__ __interval__  (e.g. 60->seconds)and the path to the log file.
 
 
